@@ -62,7 +62,7 @@ func getValidRomanNums(val1, val2 string) (int, int, bool) {
     "V":   5,
     "VI":  6,
     "VII": 7,
-    "IIX": 8,
+    "VIII": 8,
     "IX":  9,
     "X":   10,
   }

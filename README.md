@@ -4,5 +4,5 @@
 **Установка из исходников:** 
 1. `git clone https://github.com/grighq/katatest` 
 2. `cd katatest`
-3. `go build main.go roman.go` и запуск `./main` или  без компиляции `go run main.go roman.go`
+3. `go build main.go` и запуск `./main` или `go run main.go`
 

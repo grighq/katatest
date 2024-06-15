@@ -26,8 +26,7 @@ func main() {
     fmt.Println(intToRoman(res))
   } else {
     num1, num2 := getValidNum(val1), getValidNum(val2)
-    res := calculate(num1, num2, sign)
-    fmt.Println(res)
+    fmt.Println(calculate(num1, num2, sign))
   }
 }
 

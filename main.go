@@ -13,7 +13,7 @@ func main() {
   in := bufio.NewReader(os.Stdin)
   text, _ := in.ReadString('\n')
   vals := strings.Split(strings.Trim(text, "\n"), " ")
-  if len(vals) < 3 {
+  if len(vals) != 3 {
     panic("Ошибка ввода! Допустимый фомат ввода `5 * 3` или `IX - VI`")
   }
   val1, val2, sign := vals[0], vals[2], vals[1]
@@ -21,7 +21,7 @@ func main() {
   if num1, num2, ok := getValidRomanNums(val1, val2); ok {
     res := calculate(num1, num2, sign)
     if res < 1 {
-      panic("Ошибка! Результат вычислений с римскими числами должен быть больше 1")
+      panic("Ошибка! В римской системе нет отрицательных чисел")
     }
     fmt.Println(intToRoman(res))
   } else {

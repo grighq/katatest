@@ -21,7 +21,7 @@ func main() {
   if num1, num2, ok := getValidRomanNums(val1, val2); ok {
     res := calculate(num1, num2, sign)
     if res < 1 {
-      panic("Ошибка! В римской системе нет отрицательных чисел")
+      panic("Ошибка! Результат вычислений с римскими числами должен быть больше 1")
     }
     fmt.Println(intToRoman(res))
   } else {

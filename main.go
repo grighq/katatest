@@ -48,8 +48,9 @@ func calculate(num1, num2 int, sign string) int {
 func getValidNum(val string) int {
   if num, err := strconv.Atoi(val); num > 0 && num <= 10 && err == nil {
     return num
+  } else {
+    panic("Ошибка ввода! Введите только римские или только арабские числа от 1 до 10")
   }
-  panic("Ошибка ввода! Введите только римские или только арабские числа от 1 до 10")
 }
 
 func getValidRomanNums(val1, val2 string) (int, int, bool) {
